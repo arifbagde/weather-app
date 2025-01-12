@@ -1,0 +1,111 @@
+.parent-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-dashboard-container {
+  margin: 50px 0px;
+  width: 400px;
+  height: 500px;
+  outline: none;
+  border: none;
+  border-radius: 16px;
+}
+.day {
+  background: linear-gradient(45deg, #62cff4, #2c67f2);
+}
+.night {
+  background: linear-gradient(45deg, #000000, #444444);
+}
+.weather-dashboard-container .searchBar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.searchBar-container input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 0px 10px;
+  font-family: "Poppins", serif;
+  font-size: 12px;
+}
+
+.searchBar-container button {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button .icon {
+  font-size: 16px;
+}
+
+.weather-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.weather-details-container .temperature-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.weather-details-container .condition {
+  margin: 0px;
+  font-size: 18px;
+}
+.temperature-details .weatherIcon {
+  width: 64px;
+  height: 64px;
+  /* margin: 10px 0px; */
+}
+
+.temperature-details .temperature {
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 400;
+  margin: 10px 0px;
+}
+
+.weather-details-container .location {
+  align-self: flex-start;
+  width: 400px;
+  margin-inline: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 28px;
+  text-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.weather-dashboard-container .weather-info {
+  display: flex;
+  margin: 10px 0px;
+  width: 300px;
+  flex-direction: row;
+  column-gap: 24px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
