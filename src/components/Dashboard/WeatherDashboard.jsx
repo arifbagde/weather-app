@@ -21,7 +21,8 @@ function WeatherDashboard() {
     try {
       const response = await fetch(
         process.env.REACT_APP_BASE_URL +
-          `/current.json?key=${process.env.REACT_APP_API_KEY}&q=${city}&aqi=yes`
+          `/current.json?key=${process.env.REACT_APP_API_KEY}&q=${city}&aqi=yes`,
+        { cache: "no-store" }
       );
       const result = await response.json();
       console.log("Result:", result);
